@@ -1,0 +1,11 @@
+
+services:
+  herdapp:
+    build: .
+    command: rails s
+    volumes:
+      - ./herdapp:/work/herdapp
+    ports:
+      - 3000:3000
+    environment:
+      - RAILS_ENV=development

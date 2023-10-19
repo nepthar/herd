@@ -1,5 +1,5 @@
 FROM ruby:3.1
-WORKDIR /work
+
 # dependencies
 RUN \
   apt-get update && \
@@ -20,10 +20,13 @@ RUN \
   sqlite3 \
   libsqlite3-dev
 
+WORKDIR /work/herdapp
+COPY ./herdapp /work/herdapp
+
 RUN gem install bundler
 RUN gem install rails
 
-COPY ./ /work
+RUN bundle
 
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
