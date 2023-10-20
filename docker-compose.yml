@@ -1,10 +1,10 @@
 
 services:
   herdapp:
-    build: .
-    command: rails s
+    build: ./herdapp
+    command: ./bin/rails s
     volumes:
-      - ./herdapp:/work/herdapp
+      - ./herdapp:/rails
     ports:
       - 3000:3000
     environment:
