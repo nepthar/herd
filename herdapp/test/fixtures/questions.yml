@@ -2,6 +2,7 @@
 
 one:
   title: MyString
+<<<<<<< HEAD
   question: MyString
   created_by: MyString
 
@@ -9,3 +10,8 @@ two:
   title: MyString
   question: MyString
   created_by: MyString
+=======
+
+two:
+  title: MyString
+>>>>>>> d721cf4 (created questions model and added attributes)
