@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.1].define(version: 2023_10_20_183052) do
   create_table "answers", force: :cascade do |t|
     t.string "who"
@@ -22,6 +23,11 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_20_183052) do
     t.string "title"
     t.string "question"
     t.string "created_by"
+=======
+ActiveRecord::Schema[7.1].define(version: 2023_10_21_164625) do
+  create_table "questions", force: :cascade do |t|
+    t.string "title"
+>>>>>>> d721cf4 (created questions model and added attributes)
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
