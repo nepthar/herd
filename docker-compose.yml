@@ -5,6 +5,7 @@ services:
     command: ./bin/rails s
     volumes:
       - ./herdapp:/rails
+      - ~/.irb-hsitory:/home/rails/.irb-history
     ports:
       - 3000:3000
     environment:
